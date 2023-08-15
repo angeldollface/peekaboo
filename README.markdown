@@ -12,6 +12,11 @@
 
 Since I recently installed Arch Linux on my main machine and I didn't have a program to open images, I thought I'd write one in the best language in the world and the Tauri framework. Enjoy. :heart_on_fire:
 
+## TO DO :pick:
+
+- Implement automatic window-scaling.
+- Add text to hint at dragging and dropping images.
+
 ## STATUS :warning:
 
 ***THIS PROJECT IS STILL HEAVILY W.I.P.***
