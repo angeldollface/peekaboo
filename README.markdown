@@ -1,6 +1,7 @@
 <p align="center">
  <img src="assets/banner.png"/>
 </p>
+
 # PEEKABOO :camera: :crab:
 
 ![Peekaboo CI](https://github.com/angeldollface/peekaboo/actions/workflows/rust.yml/badge.svg)
