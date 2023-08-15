@@ -38,7 +38,7 @@ git clone https://github.com/angeldollface/peekabo
 - 2.) Change directory into the source directory's root:
 
 ```bash
-cd peeakbo
+cd peekabo
 ```
 
 - 3.) Install Tauri's CLI:
