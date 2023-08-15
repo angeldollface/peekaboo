@@ -14,8 +14,8 @@ Since I recently installed Arch Linux on my main machine and I didn't have a pro
 
 ## TO DO :pick:
 
-- Implement automatic window-scaling.
-- Add text to hint at dragging and dropping images.
+- [ ] Implement automatic window-scaling.
+- [ ] Add text to hint at dragging and dropping images.
 
 ## STATUS :warning:
 
