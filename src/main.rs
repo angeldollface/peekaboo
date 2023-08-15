@@ -1,5 +1,5 @@
 /*
-PEEKABO by Alexander Abraham a.k.a. "Angel Dollface".
+PEEKABOO by Alexander Abraham a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
 

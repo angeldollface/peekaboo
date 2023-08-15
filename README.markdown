@@ -1,6 +1,9 @@
-# PEEKABO :camera: :crab:
+<p align="center">
+ <img src="assets/banner.png"/>
+</p>
+# PEEKABOO :camera: :crab:
 
-![Peekabo CI](https://github.com/angeldollface/peekabo/actions/workflows/rust.yml/badge.svg)
+![Peekaboo CI](https://github.com/angeldollface/peekaboo/actions/workflows/rust.yml/badge.svg)
 
 ***A graphical interface to display images. :camera: :crab:***
 
@@ -27,18 +30,18 @@ Make sure you have the following tools installed and available from the command 
 - [Rust](https://rust-lang.org)
 - [Git](https://git-scm.org)
 
-After you have confirmed that both are installed, execute the following steps to build ***Peekabo*** from source:
+After you have confirmed that both are installed, execute the following steps to build ***Peekaboo*** from source:
 
 - 1.) Download the source code:
 
 ```bash
-git clone https://github.com/angeldollface/peekabo
+git clone https://github.com/angeldollface/peekaboo
 ```
 
 - 2.) Change directory into the source directory's root:
 
 ```bash
-cd peekabo
+cd peekaboo
 ```
 
 - 3.) Install Tauri's CLI:
@@ -64,5 +67,5 @@ cargo tauri build
 
 ## NOTE :scroll:
 
-- *Peekabo :camera: :crab:* by Alexander Abraham :black_heart: a.k.a. *"Angel Dollface" :dolls: :ribbon:*
+- *Peekaboo :camera: :crab:* by Alexander Abraham :black_heart: a.k.a. *"Angel Dollface" :dolls: :ribbon:*
 - Licensed under the MIT license.

@@ -1,13 +1,13 @@
 [package]
-name = "peekabo"
+name = "peekaboo"
 version = "0.1.0"
 license = "MIT"
 edition = "2021"
 authors = ["Angel Dollface <youreccentricity@outlook.com>"]
 description= "A graphical interface to display images."
-homepage = "https://github.com/angeldollface/peekabo"
-repository = "https://github.com/angeldollface/peekabo"
-documentation = "https://github.com/angeldollface/peekabo"
+homepage = "https://github.com/angeldollface/peekaboo"
+repository = "https://github.com/angeldollface/peekaboo"
+documentation = "https://github.com/angeldollface/peekaboo"
 readme = "README.markdown"
 categories = ["images"]
 exclude = [

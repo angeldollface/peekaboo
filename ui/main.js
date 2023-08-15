@@ -1,13 +1,16 @@
 /*
-PEEKABO by Alexander Abraham a.k.a. "Angel Dollface".
+PEEKABOO by Alexander Abraham a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
 
-// Calling Tauri's function handler.
+// Calling Tauri's event handler.
 const { listen } = window.__TAURI__.event;
 
+// Calling Tauri's method to handle file paths.
 const { convertFileSrc } = window.__TAURI__.tauri;
 
+// Empty element to 
+// hold info.
 let imageEl;
 
 // Updates the UI depending

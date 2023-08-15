@@ -7,7 +7,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "Peekabo",
+    "productName": "Peekaboo",
     "version": "0.1.0"
   },
   "tauri": {
@@ -21,7 +21,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "art.angeldollface.peekabo",
+      "identifier": "art.angeldollface.peekaboo",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -37,7 +37,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Peekabo",
+        "title": "Peekaboo",
         "width": 800,
         "height": 800,
         "fileDropEnabled": true

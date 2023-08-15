@@ -1,5 +1,5 @@
 on: [push]
-name: Peekabo CI
+name: Peekaboo CI
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
       - name: "Install Tauri's CLI."
         run: cargo install tauri-cli
           
-      - name: "Build Peekabo."
+      - name: "Build Peekaboo."
         uses: actions-rs/cargo@v1
         with:
           command: tauri
