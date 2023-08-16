@@ -11,5 +11,5 @@ Licensed under the MIT license.
 fn main() {
     tauri::Builder::default()
     .run(tauri::generate_context!())
-    .expect("Error while running tauri application");
+    .expect("An error occurred while running Peekaboo!");
 }
