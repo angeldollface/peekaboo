@@ -1,0 +1,84 @@
+on: [push]
+#  push:
+#    tags:
+#    - '*'
+name: Peekaboo Release CI
+jobs:
+    release:
+        name: ${{ matrix.target }}
+        runs-on: ${{ matrix.os }}
+        strategy:
+          fail-fast: true
+          matrix:
+            include:
+              - os: ubuntu-latest
+                target: x86_64-unknown-linux-gnu
+              - os: windows-latest
+                target: x86_64-pc-windows-msvc
+              - os: macos-latest
+                target: x86_64-apple-darwin
+
+        steps:
+
+            - uses: actions/checkout@v2
+            - uses: actions-rs/toolchain@v1
+              with:
+                toolchain: stable
+
+            - name: "Get current version."
+              id: get_version
+              uses: SebRollen/toml-action@v1.0.2
+              with:
+                file: Cargo.toml
+                field: package.version
+
+            - name: "Install libraries Linux."
+              if: ${{ matrix.os == 'ubuntu-latest' }}
+              run: |
+                sudo apt-get update
+                sudo apt-get install -y curl
+                sudo apt-get install -y wget
+                sudo apt-get install -y file
+                sudo apt-get install -y libssl-dev
+                sudo apt-get install -y libgtk-3-dev
+                sudo apt-get install -y librsvg2-dev
+                sudo apt-get install -y build-essential
+                sudo apt-get install -y libwebkit2gtk-4.0-dev
+                sudo apt-get install -y libayatana-appindicator3-dev
+            
+            - name: "Install Tauri's CLI."
+              run: cargo install tauri-cli
+                        
+            - name: "Build Peekabo."
+              uses: actions-rs/cargo@v1
+              with:
+                command: tauri
+                args: build
+            
+            - name: "Upload Artefact for Linux."
+              if: ${{ matrix.os == 'ubuntu-latest' }}
+              uses: actions/upload-artifact@v3
+              with:
+                name: peekaboo_${{ steps.get_version.outputs.value }}_amd64.deb
+                path: target/release/bundle/deb/peekaboo_${{ steps.get_version.outputs.value }}_amd64.deb
+            
+            - name: "Upload Artefact for Mac OSX."
+              if: ${{ matrix.os == 'macos-latest' }}
+              uses: actions/upload-artifact@v3
+              with:
+                name: Peekaboo.app
+                path: target/release/bundle/macos/Peekaboo.app
+            
+            - name: "Upload Artefact for Windows (Setup executable)."
+              if: ${{ matrix.os == 'windows-latest' }}
+              uses: actions/upload-artifact@v3
+              with:
+                name: Peekaboo_${{ steps.get_version.outputs.value }}_x64-setup.exe
+                path: target\release\bundle\nsis\Peekaboo_${{ steps.get_version.outputs.value }}_x64-setup.exe
+            
+            - name: "Upload Artefact for Windows (MSI)."
+              if: ${{ matrix.os == 'windows-latest' }}
+              uses: actions/upload-artifact@v3
+              with:
+                name: Peekaboo_${{ steps.get_version.outputs.value }}_x64_en-US.msi
+                path: target\release\bundle\msi\Peekaboo_${{ steps.get_version.outputs.value }}_x64_en-US.msi

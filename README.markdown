@@ -6,28 +6,21 @@
 
 ![Peekaboo CI](https://github.com/angeldollface/peekaboo/actions/workflows/rust.yml/badge.svg)
 
+![Peekaboo Release CI](https://github.com/angeldollface/peekaboo/actions/workflows/release.yml/badge.svg)
+
 ***A graphical interface to display images. :camera: :crab:***
 
 ## ABOUT :books:
 
 Since I recently installed Arch Linux on my main machine and I didn't have a program to open images, I thought I'd write one in the best language in the world and the Tauri framework. Enjoy. :heart_on_fire:
 
-## TO DO :pick:
-
-- [ ] Implement automatic window-scaling.
-- [ ] Add text to hint at dragging and dropping images.
-
-## STATUS :warning:
-
-***THIS PROJECT IS STILL HEAVILY W.I.P.***
-
 ## INSTALLATION :inbox_tray:
 
-***COMING SOON!***
+If you are running on a 64-bit operating system, you can download a bundle for your platform from the [Releases](https://github.com/angeldollface/peekaboo/releases) section of this repository. If this is not the case, you can still use ***Peekaboo*** by building it from source. Refer to the section below that walks you through this process to find out how to do this.
 
 ## USAGE :hammer_and_pick:
 
-***COMING SOON!***
+To use ***Peekaboo***, simply drag and drop an image into the window and scale the window accordingly.
 
 ## BUILD FROM SOURCE :hammer:
 
