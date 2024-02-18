@@ -14,10 +14,6 @@
 
 Since I recently installed Arch Linux on my main machine and I didn't have a program to open images, I thought I'd write one in the best language in the world and the Tauri framework. Enjoy. :heart_on_fire:
 
-## INSTALLATION :inbox_tray:
-
-If you are running on a 64-bit operating system, you can download a bundle for your platform from the [Releases](https://github.com/angeldollface/peekaboo/releases) section of this repository. If this is not the case, you can still use ***Peekaboo*** by building it from source. Refer to the section below that walks you through this process to find out how to do this.
-
 ## USAGE :hammer_and_pick:
 
 To use ***Peekaboo***, simply drag and drop an image into the window and scale the window accordingly.
