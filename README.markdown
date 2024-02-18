@@ -6,8 +6,6 @@
 
 ![Peekaboo CI](https://github.com/angeldollface/peekaboo/actions/workflows/rust.yml/badge.svg)
 
-![Peekaboo Release CI](https://github.com/angeldollface/peekaboo/actions/workflows/release.yml/badge.svg)
-
 ***A graphical interface to display images. :camera: :crab:***
 
 ## ABOUT :books:
